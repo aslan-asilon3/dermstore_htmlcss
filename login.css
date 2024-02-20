@@ -1,0 +1,127 @@
+
+#signUpPage{
+    display: flex;
+    height : 600;
+    /* border: 2px solid red; */
+}
+#signUpPage>div:nth-child(1){
+    width: 60%;
+    /* border: 2px solid black; */
+}
+#signUpPage>div:nth-child(1) img{
+    width: 100%;
+}
+#signUpPage>div:nth-child(2){
+    /* border: 2px solid black; */
+    width: 35%;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+#signUpPage>div:nth-child(2)>div{
+    /* border: 2px solid red; */
+    box-shadow: 0 0 15px 3px rgb(0 0 0 / 5%);
+    border-radius: 32px;
+    height: 550px;
+    margin: 72px 0 0;
+    padding: 64px 32px 0;
+}
+#signUpPage>div:nth-child(2)>div h1{
+        font-family: JioType,helvetica,arial,sans-serif;
+    font-weight: 900;
+    text-transform: none;
+    font-size: 1.8rem;
+    letter-spacing: -.96px;
+    line-height: 1;
+}
+#signUpPage>div:nth-child(2)>div p{
+    font-family: JioType,helvetica,arial,sans-serif;
+    font-weight: 500;
+    text-transform: none;
+    font-size: .875rem;
+    letter-spacing: -.07px;
+    line-height: 1.4285714286;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+#signUpPage>div:nth-child(2)>div input{
+    display: block;
+    width: 90%;
+    text-align: left;
+    padding-top: 0;
+    padding-bottom: calc(var(--spacing-xs) + 1px);
+    background-color: #C9E2ED;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid var(--color-primary-grey-80);
+    color: var(--color-primary-grey-100);
+    border-radius: 30;
+    margin-bottom: 1px;
+    box-sizing: border-box;
+    font-family: JioType,helvetica,arial,sans-serif;
+    font-weight: 500;
+    text-transform: none;
+    font-size: 1rem;
+    letter-spacing: -.08px;
+    line-height: 2.2;
+}
+#signUpPage>div:nth-child(2)>div input{
+    margin-bottom: 8px;
+}
+#signupbutton{
+    margin-top: 6px;
+}
+#alreadySignin{
+    text-decoration: none;
+    color: #3293BD;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+#signedIn_Name{
+    color: #fff;
+}
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+  }
+  .search-container{
+    display: flex;
+    align-items: center;
+}
+.search-container span{
+    margin-left: 10px;
+}
+#adminBtn{
+    margin-top: 10px;
+    color: #fff;
+    font-weight: bolder;
+    background-color: #049fe2;
+    text-align: center;
+}
+#adminBtn:hover{
+    background-color: #0078AD;
+
+}
+@media screen and (max-width: 1235px) {
+    #signUpPage{
+        display: flex;
+        /* justify-content: center; */
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    #bannerSignup{ 
+        display: none;
+    }
+    #SigninSection{
+        padding-left: 0;
+    }
+    #SigninSection div{
+        padding-left: 0;
+        width: 500px;
+    }
+}

@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp CosmetiCare</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Noto+Sans+SC:wght@100&family=Oswald:wght@700&family=Poppins:wght@200&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+   
+    <style>
+        #container{
+            display: flex;
+            height: auto;
+            width: 100%;
+            justify-content: center;
+            background-color: #f2f2f2;
+            
+        }
+        #container > div{
+            height: auto;
+            width: 500px;
+            box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+            padding: 20px;
+            background-color: white;
+            margin-top: 30px;
+        }
+        .social{
+            display: flex;
+            width: 100%;
+            height: 30px;
+            justify-content: space-around;
+        }
+
+        .social > div{
+            width: 50%;
+            height: 100%;
+            border: 1px solid black;
+            margin: 10px;
+            max-width: auto;
+            padding: 5px;
+        }
+        span{
+            margin: 0px 0px 20px 0px;
+            font-size: 20px;
+            margin: auto;
+        }
+ 
+        .input{
+            width: 100%;
+            height: 20px;
+
+        }
+        #button{
+            width: 100%;
+            height: 40px;
+            background-color: #222222;
+            color: white;
+            cursor: pointer;
+        }
+
+    </style>
+        <style>
+            /* Style for labelForm class */
+
+            .labelForm {
+                display: block;
+                margin-bottom: 5px;
+                font-weight: bold;
+            }
+    
+            .signup-form {
+                margin-top: 27px;
+            }
+    
+            /* Style for input fields */
+            #name,
+            input[type="email"],
+            input[type="number"],
+            input[type="password"] {
+                display: block;
+                width: 100%;
+                padding: 8px;
+                margin-bottom: 15px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+                /* add some color to the input box border */
+                outline: none;
+                transition: all 0.3s ease-in-out;
+            }
+    
+            input[type="text"]:focus,
+            input[type="email"]:focus,
+            input[type="tel"]:focus,
+            input[type="password"]:focus {
+                border-color: #0078AD;
+            }
+    
+            /* Style for phone number input field */
+            #mobile {
+                position: relative;
+            }
+    
+            #mobile:before {
+                content: "+91 ";
+                position: absolute;
+                top: 50%;
+                left: 10px;
+                transform: translateY(-50%);
+                color: #333;
+                font-weight: bold;
+            }
+    
+            /* Style for error messages */
+            .error {
+                display: none;
+                color: red;
+                font-size: 12px;
+                margin-top: 5px;
+            }
+    
+        </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="grpahics\CosmetiCare__2_-removebg-preview.png" alt="" />
+            </a>
+        </div>
+        <div class="searchbox">
+            <form>
+                <div class="search-container">
+                    <input type="text" class="no-outline" placeholder="Search for a product or brand..." />
+                    <button type="submit">
+                        <span class="material-symbols-outlined"> search </span>
+                    </button>
+                </div>
+            </form>
+        </div>
+        <!-- <div class="account">
+            <a href="account.html">
+                <div>
+                    <img src="https://fonts.gstatic.com/s/i/short-term/release/materialsymbolsoutlined/person/wght600/24px.svg"
+                        alt="">
+                </div>
+                <div class="autoMargin">
+                    Account
+                </div>
+            </a>
+        </div> -->
+        <div class="account">
+            <div class="dropdown">
+                <a href="login.html">
+                    <div>
+                        <img src="https://fonts.gstatic.com/s/i/short-term/release/materialsymbolsoutlined/person/wght600/24px.svg"
+                            alt="">
+                    </div>
+                    <div class="autoMargin">
+                        Account
+                    </div>
+                </a>
+                <div class="dropdown-content">
+                    <a href="login.html">Login</a>
+                    <a href="signup.html">Sign up</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="cart">
+            <a href="cart.html">
+                <div>
+                    <img src="https://fonts.gstatic.com/s/i/short-term/release/materialsymbolsoutlined/shopping_bag/wght600/24px.svg"
+                        alt="">
+                </div>
+                <div class="autoMargin">
+                    Cart
+                </div>
+            </a>
+        </div>
+    </header>
+    <hr>
+    <!-- <div id="container">
+        <div>
+            <h2>Create An Account</h2>
+
+            <form action="" id="form">
+                <h4>*Full Name</h4>
+                <input class = "input" type="text" id="name" >
+
+                <h4>*Email address</h4>
+                <input class = "input" type="email" id="mail" >
+
+                <h4>*Confirm Email address</h4>
+                <input class = "input" type="email" id="conmail" >
+
+                <h4>*Password</h4>
+                <input class = "input" type="password" id="pass" >
+
+                <h4>*Confirm Password</h4>
+                <input class = "input" type="password" id="conpass" >
+
+                <h4>Cell Phone Number(Optional)</h4>
+                <input class = "input" type="number" id="num"> 
+
+                <h4>Referral Code(Optional)</h4>
+                <input class = "input" type="text">
+                <p>* Your referrals discount is automatically applied at cart</p>
+
+                <br>
+                <p>Loyalty Reward program</p>
+                <input type="checkbox">
+                <span>Include me in the Dermstore Rewards program Read our terms of use.</span>
+                <br>
+                <input type="submit" id="button">
+            </form>
+        </div>
+    </div> -->
+    <div id="signUpPage">
+        <div id="bannerSignup">
+            <img src="grpahics\signupbanner.jpg" alt="">
+        </div>
+        <div id="SigninSection">
+            <div>
+                <h1>Sign Up to CosmetiCare</h1>
+                <p>to access your Addresses, Orders & Wishlist.</p>
+                <form id="signup-form" method="post" action="signin.html" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label class="labelForm" for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <span id="email-error" class="error"></span>
+
+                    <label class="labelForm" for="mobile">Mobile Number:</label>
+                    <input type="number" id="mobile" name="mobile" required>
+                    <span id="mobile-error" class="error"></span>
+
+                    <label class="labelForm" for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                    <div id="password-error" class="error">asrhgarg</div>
+
+                    <button id="signupbutton" type="submit"
+                        style="background-color: #0078AD; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer; font-size: 16px;">Sign
+                        Up</button>
+                </form>
+                <a id="alreadySignin" href="login.html">Already Registered?</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script>
+    // let searchBar= document.getElementById("searchBar")
+
+    // searchBar.addEventListener("submit",(e)=>{
+    //     e.preventDefault()
+    //     console.log(searchBar[0].value)
+    // })
+
+    const form = document.getElementById('signup-form');
+    const nameInput = document.getElementById('name');
+    const emailInput = document.getElementById('email');
+    const emailError = document.getElementById('email-error');
+    const mobileInput = document.getElementById('mobile');
+    const mobileError = document.getElementById('mobile-error');
+    const passwordInput = document.getElementById('password');
+    const passwordError = document.getElementById('password-error');
+    const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^\da-zA-Z]).{8,}$/;
+    let previousPasswords = [];
+
+    form.addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        // Validate mobile number
+        // console.log(typeof Number(mobileInput.value));
+        if (!mobileInput.checkValidity() || mobileInput.value.length !== 10) {
+            // console.log('mobcheck')
+            // console.log(Number(mobileInput.value))
+            // console.log(mobileInput.value.length)
+            alert('Please enter a valid 10-digit mobile number.')
+            return;
+        }
+        // Validate password
+        console.log(passwordRegex.test(passwordInput.value));
+        if (!passwordRegex.test(passwordInput.value)) {
+            passwordError.innerText = 'Please enter a password that meets the required criteria.';
+            console.log(passwordError.textContent);
+            alert('Please enter a password that meets the required criteria.')
+            return;
+        } else {
+            passwordError.textContent = '';
+        }
+        let data = {
+            name: nameInput.value,
+            email: emailInput.value,
+            Mobile_No: mobileInput.value,
+            password: passwordInput.value
+        }
+        
+        // Submit form
+        console.log(data)
+        fetch("http://localhost:3000/RegisterUser", {
+            method: "post",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(data)
+        })
+            .then(response => response.json())
+            .then(result => {
+                console.log("success", result)
+            })
+            .catch(err => console.log(JSON.stringify(err)))
+
+            alert("Sign Up Successfull")
+        });
+
+</script>
+</html>

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login CosmetiCare</title>
+    <link rel="stylesheet" href="login.css">
+    <style>
+        #bar{
+            width: 100%;
+            height: 80px;
+            /* border: 1px solid red; */
+            background-color: white;
+        }
+        .image{
+            margin-left: 100px;
+            margin-top: 15px;
+            height: 50px;
+        }
+        #back{
+            background-color: rgb(238, 234, 234);
+            width: 100%;
+            height: 700px;
+            /* border: 1px solid red; */
+        }
+        #back div{
+            width: 70%;
+            height: 600px;
+            /* border: 1px solid red; */
+            margin: auto;
+            /* margin-top: 100px; */
+            /* display: flex; */
+            flex-direction: row;                  
+            justify-content: space-around;
+        }
+        #first{
+             width: 45%;
+             height:100%;
+             /* border: 1px solid black; */
+             background-color: white;
+             margin-top: 50px;
+             
+        }
+        #second{
+            width: 45%;
+             height:25%;
+             /* border: 1px solid black; */
+             background-color: white;
+             margin-top: 50px;
+        }
+        .inp{
+            height: 40px;
+            width: 80%;
+            margin-left: 30px;
+            border-radius: 5px;
+            /* text-align: right; */
+        }
+        .ptag{
+            font-size: 25px;
+            margin-left: 30px;
+
+        }
+        P{
+            margin-left: 30px;
+        }
+        .clButton{
+            
+            background: black;
+            color: white;
+            padding: 10px;
+            display: block;
+            margin-left: 30px;
+            width: 85%;
+            font-size: 20px;
+        }
+        #fbgoogle{
+            width: 90%;
+            height: 50px;
+            /* border: 1px solid red; */
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+        }
+        #fbgoogle>div{
+            width: 47%;
+            height: 100%;
+            border: 1px solid black;
+            /* padding-right: 100%; */
+            
+            
+        }
+        .image{
+                width: 100%;
+              margin: auto;
+               
+                /* height: auto; */
+        }
+        @media (max-width:780px){
+            #back>div{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
+    </style>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Noto+Sans+SC:wght@100&family=Oswald:wght@700&family=Poppins:wght@200&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="grpahics\CosmetiCare__2_-removebg-preview.png" alt="" />
+            </a>
+        </div>
+        <div class="searchbox">
+            <form>
+                <div class="search-container">
+                    <input type="text" class="no-outline" placeholder="Search for a product or brand..." />
+                    <button type="submit">
+                        <span class="material-symbols-outlined"> search </span>
+                    </button>
+                </div>
+            </form>
+        </div>
+        <!-- <div class="account">
+            <a href="account.html">
+                <div>
+                    <img src="https://fonts.gstatic.com/s/i/short-term/release/materialsymbolsoutlined/person/wght600/24px.svg"
+                        alt="">
+                </div>
+                <div class="autoMargin">
+                    Account
+                </div>
+            </a>
+        </div> -->
+        <div class="account">
+            <div class="dropdown">
+                <a href="signup.html">
+                    <div>
+                        <img src="https://fonts.gstatic.com/s/i/short-term/release/materialsymbolsoutlined/person/wght600/24px.svg"
+                            alt="">
+                    </div>
+                    <div class="autoMargin">
+                        Account
+                    </div>
+                </a>
+                <div class="dropdown-content">
+                    <a href="login.html">Login</a>
+                    <a href="signup.html">Sign up</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="cart">
+            <a href="cart.html">
+                <div>
+                    <img src="https://fonts.gstatic.com/s/i/short-term/release/materialsymbolsoutlined/shopping_bag/wght600/24px.svg"
+                        alt="">
+                </div>
+                <div class="autoMargin">
+                    Cart
+                </div>
+            </a>
+        </div>
+    </header>
+    <hr>
+    <!-- <div id="back">
+        <div>
+                    <div id="first">
+                    <p class="ptag">Existing Customers</p>
+                    
+                     <p> *Email </p>
+                    <input class="inp" type="email" placeholder=""/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    
+                    <p> *Password </p>
+                   <input class="inp" type="password" placeholder="show"/>
+                   <br/>
+                    <br/>
+                    <br/>
+                   <p > Forgetten your Password?</p>
+                   <br/>
+                   <button class="clButton">LOGIN TO YOUR ACCOUNT</button>
+                   <br/>
+                    
+                   <p> Or,Continue with </p>
+                    <div id="fbgoogle">
+                        <div>
+                            <a href="https://www.facebook.com/login.php?skip_api_login=1&api_key=797759867683555&kid_directed_site=0&app_id=797759867683555&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fv3.2%2Fdialog%2Foauth%3Fclient_id%3D797759867683555%26redirect_uri%3Dhttps%253A%252F%252Floginservice.thehut.net%252Ffacebook%252FhandleLogin%26state%3DQjgzQjkyQ0RENTg3NDM5NDE4QkU3NDNEOTg3OEVCNzE3MUVDQzY4Q0NDOTM2QTYwMjAyRURBOEIwRUExMUJFRA%253D%253D.ZXlKbGVIQnBjbmxVYVcxbElqb3hOalE0TnpBeE1UUTJOek0wTENKamMzSm1WRzlyWlc0aU9pSmhaRE01TURjd01DMHhOMkUwTFRRd1pXUXRPV1JpWVMwd1lUQmpOVEk1TUdSbE56TWlMQ0p6YVhSbElqb2lNakE0SWl3aWMzVmljMmwwWlNJNkluVnpJaXdpWTJ4cFpXNTBVM1JoZEdVaU9pSmxlVXA1V2xoU01XTnROVlZpZVVrMlNXMW9NR1JJUW5wS1ZFNUNTbFJLUjBwVVNrZGtNMlF6VEcxU2JHTnRNWHBrUnpsNVdsTTFhbUl5TUd4TmExcG9XVEpPZG1SWE5UQlRSemwwV2xNMWFGa3lUblprVnpVd1NXNHdYSFV3TUROa0lpd2ljSEp2ZG1sa1pYSWlPaUptWVdObFltOXZheUlzSW5KbFpHbHlaV04wVlhKc0lqb2lhSFIwY0hNNkx5OTNkM2N1WkdWeWJYTjBiM0psTG1OdmJTOXpiMk5wWVd4QmRYUm9aVzUwYVdOaGRHbHZiaTVoWTJOdmRXNTBJaXdpWm14dmR5STZJbE5JU1VWTVJDSjk%253D%26scope%3Demail%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3Dccbdde4e-b070-4094-9f09-5cd9a386b673%26tp%3Dunspecified&cancel_url=https%3A%2F%2Floginservice.thehut.net%2Ffacebook%2FhandleLogin%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3DQjgzQjkyQ0RENTg3NDM5NDE4QkU3NDNEOTg3OEVCNzE3MUVDQzY4Q0NDOTM2QTYwMjAyRURBOEIwRUExMUJFRA%253D%253D.ZXlKbGVIQnBjbmxVYVcxbElqb3hOalE0TnpBeE1UUTJOek0wTENKamMzSm1WRzlyWlc0aU9pSmhaRE01TURjd01DMHhOMkUwTFRRd1pXUXRPV1JpWVMwd1lUQmpOVEk1TUdSbE56TWlMQ0p6YVhSbElqb2lNakE0SWl3aWMzVmljMmwwWlNJNkluVnpJaXdpWTJ4cFpXNTBVM1JoZEdVaU9pSmxlVXA1V2xoU01XTnROVlZpZVVrMlNXMW9NR1JJUW5wS1ZFNUNTbFJLUjBwVVNrZGtNMlF6VEcxU2JHTnRNWHBrUnpsNVdsTTFhbUl5TUd4TmExcG9XVEpPZG1SWE5UQlRSemwwV2xNMWFGa3lUblprVnpVd1NXNHdYSFV3TUROa0lpd2ljSEp2ZG1sa1pYSWlPaUptWVdObFltOXZheUlzSW5KbFpHbHlaV04wVlhKc0lqb2lhSFIwY0hNNkx5OTNkM2N1WkdWeWJYTjBiM0psTG1OdmJTOXpiMk5wWVd4QmRYUm9aVzUwYVdOaGRHbHZiaTVoWTJOdmRXNTBJaXdpWm14dmR5STZJbE5JU1VWTVJDSjk%253D%23_%3D_&display=page&locale=en_GB&pl_dbl=0"> <img class="image" src="https://tse3.mm.bing.net/th?id=OIP.3A07wYVpD7XjvG7pYNQi2wHaEJ&pid=Api&P=0&w=279&h=156" /></a> 
+                             
+                        </div>
+                        <div>  <a href="https://www.facebook.com/login.php?skip_api_login=1&api_key=797759867683555&kid_directed_site=0&app_id=797759867683555&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fv3.2%2Fdialog%2Foauth%3Fclient_id%3D797759867683555%26redirect_uri%3Dhttps%253A%252F%252Floginservice.thehut.net%252Ffacebook%252FhandleLogin%26state%3DQjgzQjkyQ0RENTg3NDM5NDE4QkU3NDNEOTg3OEVCNzE3MUVDQzY4Q0NDOTM2QTYwMjAyRURBOEIwRUExMUJFRA%253D%253D.ZXlKbGVIQnBjbmxVYVcxbElqb3hOalE0TnpBeE1UUTJOek0wTENKamMzSm1WRzlyWlc0aU9pSmhaRE01TURjd01DMHhOMkUwTFRRd1pXUXRPV1JpWVMwd1lUQmpOVEk1TUdSbE56TWlMQ0p6YVhSbElqb2lNakE0SWl3aWMzVmljMmwwWlNJNkluVnpJaXdpWTJ4cFpXNTBVM1JoZEdVaU9pSmxlVXA1V2xoU01XTnROVlZpZVVrMlNXMW9NR1JJUW5wS1ZFNUNTbFJLUjBwVVNrZGtNMlF6VEcxU2JHTnRNWHBrUnpsNVdsTTFhbUl5TUd4TmExcG9XVEpPZG1SWE5UQlRSemwwV2xNMWFGa3lUblprVnpVd1NXNHdYSFV3TUROa0lpd2ljSEp2ZG1sa1pYSWlPaUptWVdObFltOXZheUlzSW5KbFpHbHlaV04wVlhKc0lqb2lhSFIwY0hNNkx5OTNkM2N1WkdWeWJYTjBiM0psTG1OdmJTOXpiMk5wWVd4QmRYUm9aVzUwYVdOaGRHbHZiaTVoWTJOdmRXNTBJaXdpWm14dmR5STZJbE5JU1VWTVJDSjk%253D%26scope%3Demail%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3Dccbdde4e-b070-4094-9f09-5cd9a386b673%26tp%3Dunspecified&cancel_url=https%3A%2F%2Floginservice.thehut.net%2Ffacebook%2FhandleLogin%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3DQjgzQjkyQ0RENTg3NDM5NDE4QkU3NDNEOTg3OEVCNzE3MUVDQzY4Q0NDOTM2QTYwMjAyRURBOEIwRUExMUJFRA%253D%253D.ZXlKbGVIQnBjbmxVYVcxbElqb3hOalE0TnpBeE1UUTJOek0wTENKamMzSm1WRzlyWlc0aU9pSmhaRE01TURjd01DMHhOMkUwTFRRd1pXUXRPV1JpWVMwd1lUQmpOVEk1TUdSbE56TWlMQ0p6YVhSbElqb2lNakE0SWl3aWMzVmljMmwwWlNJNkluVnpJaXdpWTJ4cFpXNTBVM1JoZEdVaU9pSmxlVXA1V2xoU01XTnROVlZpZVVrMlNXMW9NR1JJUW5wS1ZFNUNTbFJLUjBwVVNrZGtNMlF6VEcxU2JHTnRNWHBrUnpsNVdsTTFhbUl5TUd4TmExcG9XVEpPZG1SWE5UQlRSemwwV2xNMWFGa3lUblprVnpVd1NXNHdYSFV3TUROa0lpd2ljSEp2ZG1sa1pYSWlPaUptWVdObFltOXZheUlzSW5KbFpHbHlaV04wVlhKc0lqb2lhSFIwY0hNNkx5OTNkM2N1WkdWeWJYTjBiM0psTG1OdmJTOXpiMk5wWVd4QmRYUm9aVzUwYVdOaGRHbHZiaTVoWTJOdmRXNTBJaXdpWm14dmR5STZJbE5JU1VWTVJDSjk%253D%23_%3D_&display=page&locale=en_GB&pl_dbl=0"> 
+                            <img class="image" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" /></a> </div>
+                    </div> -->
+     
+                <!-- </div>    
+           <div id="second">
+               <p class="ptag">New Customers</p>
+                <a href="signup.html">
+               <button class="clButton" onclick="myfunction()" >CONTINUE</button>
+
+                </a>
+           </div>
+        </div> -->
+       
+       
+    <!-- </div> --> 
+
+    <div id="signUpPage">
+        <div id="bannerSignup">
+            <img src="grpahics\signupbanner.jpg" alt="">
+        </div>
+        <div id="SigninSection">
+            <div>
+                <h1>Sign in to CosmetiCare</h1>
+                <p>to access your Addresses, Orders & Wishlist.</p>
+                <form id="signin-form" method="post">
+                    <label class="labelForm" for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <span id="email-error" class="error"></span>
+
+                    <label class="labelForm" for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                    <span id="password-error" class="error"></span>
+
+                    <button id="signinbutton" type="submit" style="display: block; margin-top: 2px;background-color: #0078AD; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer; font-size: 16px;">Sign In</button>
+                    <a id="alreadySignin" href="signup.html">Not Registered?</a>
+                </form>
+             </div>
+        </div>
+    </div>
+
+</body>
+<script>
+    
+let form = document.getElementById("signin-form")
+// let signedInName = document.getElementById("signedIn_Name")
+// let signupBtn = document.getElementById("signUpBtn")
+// let logout = document.getElementById("logOutBtn")
+form.addEventListener("submit",(e)=>{
+    e.preventDefault()
+    let data = {
+        email : form[0].value,
+        password : form[1].value
+    }
+    fetchLogin(data)
+    // console.log(form[0].value,form[1].value);
+})
+ function fetchLogin(dataInput){
+    
+    fetch("http://localhost:3000/RegisterUser")
+    .then(res => res.json())
+    .then(data=> {
+        let token = false
+        for(let i=0;i<data.length;i++){
+            if(data[i].email === dataInput.email && data[i].password === dataInput.password){
+                // alert(`Welcome ${data[i].name}`)
+                token = true;
+                localStorage.setItem("signedOn",JSON.stringify(data[i]))
+                let fName = data[i].name.split(' ')[0]
+                localStorage.setItem("LoggedName",JSON.stringify(fName))
+                alert("SignIn Successful")
+                window.location.href = "./index.html"
+            }
+        }
+        if(!token){
+            alert("Wrong Credentials!!!")
+        }  
+    })
+    .catch(err => console.log(err))
+ }
+
+
+</script>
+</html>

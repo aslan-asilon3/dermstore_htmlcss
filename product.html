@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css\style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="sweetalert2.all.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+</head>
+
+<body>
+
+
+    <!-- //Main Section -->
+    <div id="container">
+
+        <div class="left">
+            <div class="category">
+                <h2>Electronics</h2>
+                <input type="submit" value="Mobile" data-val="mobile" class="filterBtn">
+                <hr>
+                <input type="submit" value="Camera" data-val="camera" class="filterBtn">
+                <hr>
+                <input type="submit" value="Computers" data-val="computers" class="filterBtn">
+                <hr>
+                <input type="submit" value="TV" data-val="tv" class="filterBtn">
+            </div>
+            
+            <div class="category">
+                <h2>Foods & Edibles</h2>
+                <input type="submit" value="Staples" data-val="staple" class="filterBtn">
+                <hr>
+                <input type="submit" value="Bakery" data-val="bakery" class="filterBtn">
+                <hr>
+                <input type="submit" value="Dairy" data-val="dairy" class="filterBtn">
+                <hr>
+                <input type="submit" value="Baverages" data-val="bevrages" class="filterBtn">
+                <hr>
+                <input type="submit" value="Fruits" data-val="fruits" class="filterBtn">
+            </div>
+            
+            <div class="category">
+                <h2>Female</h2>
+                <input type="submit" value="Women" data-val="women" class="filterBtn">
+                <hr>
+                <input type="submit" value="Girls" data-val="girls" class="filterBtn">
+                <hr>
+                <input type="submit" value="Make-up" data-val="makeup" class="filterBtn">
+                <hr>
+                <input type="submit" value="Hair" data-val="hair" class="filterBtn">
+                <hr>
+                <input type="submit" value="Fragrances" data-val="fragrances" class="filterBtn">
+                <hr>
+                <input type="submit" value="Skin Care" data-val="skin care" class="filterBtn">
+            </div>
+            
+            <div class="category">
+                <h2>Male</h2>
+                <input type="submit" value="Men" data-val="men" class="filterBtn">
+                <hr>
+                <input type="submit" value="Boys" data-val="boys" class="filterBtn">
+            </div>
+            
+            <div class="category">
+                <h2>Coins & Idols</h2>
+                <input type="submit" value="Gold Coins" data-val="gcoin" class="filterBtn">
+                <hr>
+                <input type="submit" value="Silver Coins" data-val="scoin" class="filterBtn">
+                <hr>
+                <input type="submit" value="Idols" data-val="idol" class="filterBtn">
+            </div>
+            
+            <div class="category">
+                <h2>Essentials & Not</h2>
+                <input type="submit" value="Essentials" data-val="essential" class="filterBtn">
+                <hr>
+                <input type="submit" value="Not Essentials" data-val="not-essential" class="filterBtn">
+            </div>
+            
+        </div>
+        <div class="right">
+            <div class="top">
+                <!-- <h3 id="showing">Showing 20 of 100 items</h3> -->
+                <select name="sort" id="sort">
+                    <option value="">All Products</option>
+                    <option value="desc">High to Low</option>
+                    <option value="asc">Low to High</option>
+                </select>
+
+                <select name="sort" id="filterPrice">
+                    <option value="">Filter by Price</option>
+                    <option value="100">Under 100</option>
+                    <option value="1000">Under 1000</option>
+                    <option value="3000">Under 3000</option>
+                    <option value="4999">Under 5000</option>
+                    <option value="5000">Above 5000</option>
+                </select>
+            </div>
+
+            <div id="cardContainer">
+                
+            </div>
+        </div>
+    </div>
+    <hr> 
+    <div class="pagination-wrapper" id="pagination-wrapper"></div>
+    <hr> 
+    </div>
+    <footer>
+        <div class="allCat">
+            <h2>All Categories</h2>
+            <a href="#">Grocery</a>
+            <a href="#">Electronics</a>
+            <a href="#">Fashion</a>
+            <a href="#">Beauty</a>
+            <a href="#">Home & Kitchen</a>
+            <a href="#">Premium Fruits</a>
+            <a href="#">Books</a>
+            <a href="#">Furniture</a>
+        </div>
+        <div class="popCat">
+            <h2>Popular Categories</h2>
+            <a href="#">Staples</a>
+            <a href="#">Baverages</a>
+            <a href="#">Personal Care</a>
+            <a href="#">Home Care</a>
+            <a href="#">Fruits & Vegetables</a>
+            <a href="#">Baby Care</a>
+            <a href="#">Snack & Branded Foods</a>
+            <a href="#">Dairy & Bakery</a>
+        </div>
+        <div class="customerAcc">
+            <h2>Customer Account</h2>
+            <a href="#">My Account</a>
+            <a href="#">My Orders</a>
+            <a href="#">Wishlist</a>
+            <a href="#">Payment Methods</a>
+            <a href="#">Delivery Addresses</a>
+            <a href="#">JioMart Wallet</a>
+        </div>
+        <div class="helpNSupp">
+            <h2>Help & Support</h2>
+            <a href="#">About Us</a>
+            <a href="#">FAQ</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="3">Privacy Policy</a>
+            <a href="#">E-waste Policy</a>
+            <a href="#">Cancellation & Return</a>
+            <a href="#">Shipping & Delivery Policy</a>
+        </div>
+        <div class="contact">
+            <h2>Contact Us</h2>
+            <p>WhatsApp us: ##### #####
+                Call us: #### ### ####
+                8:00 AM to 8:00 PM, 365 days</p>
+            <p>Please note that you are accessing the BETA version of <a href="index.html" class="linkMain">buddycart.com</a>
+            <h2>Download the app</h2>
+            <div class="dwnImg">
+                <img src="https://www.jiomart.com/assets/ds2web/jds-icons/ios_app_icon.svg" alt="AppStore"><img src="https://www.jiomart.com/assets/ds2web/jds-icons/google-play-icon.svg" alt="PlayStore">
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="./forAll.js"></script>
+<script src="./main.js"></script>
+</html>
